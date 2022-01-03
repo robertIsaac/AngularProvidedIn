@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FeatureTwoRoutingModule } from './feature-two-routing.module';
 import { FeatureTwoComponent } from './feature-two.component';
+import { BazService } from './baz.service';
 
 
 @NgModule({
@@ -12,6 +13,9 @@ import { FeatureTwoComponent } from './feature-two.component';
   imports: [
     CommonModule,
     FeatureTwoRoutingModule,
+  ],
+  providers: [
+    BazService,
   ],
 })
 export class FeatureTwoModule {

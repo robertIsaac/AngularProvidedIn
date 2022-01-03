@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FeatureOneRoutingModule } from './feature-one-routing.module';
 import { FeatureOneComponent } from './feature-one.component';
+import { BarService } from './bar.service';
 
 
 @NgModule({
@@ -12,6 +13,9 @@ import { FeatureOneComponent } from './feature-one.component';
   imports: [
     CommonModule,
     FeatureOneRoutingModule,
+  ],
+  providers: [
+    BarService,
   ],
 })
 export class FeatureOneModule {
